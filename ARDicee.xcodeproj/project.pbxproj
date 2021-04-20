@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A04DEFD262EEE4F00DE5F86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A04DEFC262EEE4F00DE5F86 /* README.md */; };
 		3A8695C3262DEF9D00D2CCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */; };
 		3A8695C5262DEF9D00D2CCCB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8695C4262DEF9D00D2CCCB /* art.scnassets */; };
 		3A8695C7262DEF9D00D2CCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8695C6262DEF9D00D2CCCB /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A04DEFC262EEE4F00DE5F86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3A8695BF262DEF9D00D2CCCB /* ARDicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8695C4262DEF9D00D2CCCB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -37,6 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A04DEFB262EEE0B00DE5F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */,
+				3A8695CB262DEF9E00D2CCCB /* Assets.xcassets */,
+				3A8695CD262DEF9E00D2CCCB /* LaunchScreen.storyboard */,
+				3A8695D0262DEF9E00D2CCCB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A04DF00262EEEC600DE5F86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A04DF01262EEEC900DE5F86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A8695C8262DEF9D00D2CCCB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A04DF02262EEED900DE5F86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A8695C6262DEF9D00D2CCCB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3A8695B6262DEF9D00D2CCCB = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +92,12 @@
 		3A8695C1262DEF9D00D2CCCB /* ARDicee */ = {
 			isa = PBXGroup;
 			children = (
-				3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */,
+				3A04DEFC262EEE4F00DE5F86 /* README.md */,
 				3A8695C4262DEF9D00D2CCCB /* art.scnassets */,
-				3A8695C6262DEF9D00D2CCCB /* ViewController.swift */,
-				3A8695C8262DEF9D00D2CCCB /* Main.storyboard */,
-				3A8695CB262DEF9E00D2CCCB /* Assets.xcassets */,
-				3A8695CD262DEF9E00D2CCCB /* LaunchScreen.storyboard */,
-				3A8695D0262DEF9E00D2CCCB /* Info.plist */,
+				3A04DF02262EEED900DE5F86 /* Controller */,
+				3A04DF00262EEEC600DE5F86 /* Model */,
+				3A04DF01262EEEC900DE5F86 /* View */,
+				3A04DEFB262EEE0B00DE5F86 /* Supporting Files */,
 			);
 			path = ARDicee;
 			sourceTree = "<group>";
@@ -77,6 +112,7 @@
 				3A8695BB262DEF9D00D2CCCB /* Sources */,
 				3A8695BC262DEF9D00D2CCCB /* Frameworks */,
 				3A8695BD262DEF9D00D2CCCB /* Resources */,
+				3A04DEF8262ED3F800DE5F86 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,12 +162,33 @@
 			files = (
 				3A8695C5262DEF9D00D2CCCB /* art.scnassets in Resources */,
 				3A8695CF262DEF9E00D2CCCB /* LaunchScreen.storyboard in Resources */,
+				3A04DEFD262EEE4F00DE5F86 /* README.md in Resources */,
 				3A8695CC262DEF9E00D2CCCB /* Assets.xcassets in Resources */,
 				3A8695CA262DEF9D00D2CCCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A04DEF8262ED3F800DE5F86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A8695BB262DEF9D00D2CCCB /* Sources */ = {
@@ -288,7 +345,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS4ZG3MAQH;
-				INFOPLIST_FILE = ARDicee/Info.plist;
+				INFOPLIST_FILE = "ARDicee/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS4ZG3MAQH;
-				INFOPLIST_FILE = ARDicee/Info.plist;
+				INFOPLIST_FILE = "ARDicee/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A04DEFD262EEE4F00DE5F86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A04DEFC262EEE4F00DE5F86 /* README.md */; };
+		3A1ED1E32639B35900DB6E33 /* ExtViewController+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1ED1E22639B35900DB6E33 /* ExtViewController+Test.swift */; };
 		3A8695C3262DEF9D00D2CCCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */; };
 		3A8695C5262DEF9D00D2CCCB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8695C4262DEF9D00D2CCCB /* art.scnassets */; };
 		3A8695C7262DEF9D00D2CCCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8695C6262DEF9D00D2CCCB /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3A04DEFC262EEE4F00DE5F86 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		3A1ED1E22639B35900DB6E33 /* ExtViewController+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtViewController+Test.swift"; sourceTree = "<group>"; };
 		3A8695BF262DEF9D00D2CCCB /* ARDicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8695C4262DEF9D00D2CCCB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		3A04DEFB262EEE0B00DE5F86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A8695C4262DEF9D00D2CCCB /* art.scnassets */,
 				3A8695C2262DEF9D00D2CCCB /* AppDelegate.swift */,
 				3A8695CB262DEF9E00D2CCCB /* Assets.xcassets */,
 				3A8695CD262DEF9E00D2CCCB /* LaunchScreen.storyboard */,
@@ -76,6 +79,7 @@
 		3A1ED1DD26399F9C00DB6E33 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3A1ED1E22639B35900DB6E33 /* ExtViewController+Test.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				3A04DEFC262EEE4F00DE5F86 /* README.md */,
-				3A8695C4262DEF9D00D2CCCB /* art.scnassets */,
 				3A04DF02262EEED900DE5F86 /* Controller */,
 				3A04DF00262EEEC600DE5F86 /* Model */,
 				3A04DF01262EEEC900DE5F86 /* View */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A8695C7262DEF9D00D2CCCB /* ViewController.swift in Sources */,
+				3A1ED1E32639B35900DB6E33 /* ExtViewController+Test.swift in Sources */,
 				3A8695C3262DEF9D00D2CCCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

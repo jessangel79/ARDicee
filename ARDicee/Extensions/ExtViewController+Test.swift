@@ -29,9 +29,10 @@ extension ViewController {
         material.diffuse.contents = UIImage(named: "art.scnassets/moon.jpg")
         sphere.materials = [material]
         
-        let node = SCNNode()
+//        let node = SCNNode()
+//        node.geometry = sphere // 2 lines equal to => let node = SCNNode(geometry: sphere)
+        let node = SCNNode(geometry: sphere)
         node.position = SCNVector3(0, 0.1, -0.5)
-        node.geometry = sphere
         sceneView.scene.rootNode.addChildNode(node)
     }
     

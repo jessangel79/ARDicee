@@ -129,11 +129,11 @@ extension ViewController: ARSCNViewDelegate {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            let touchLocation = touch.location(in: sceneView)
-            guard let query = sceneView.raycastQuery(from: touchLocation, allowing: .existingPlaneInfinite, alignment: .any) else {
-                return
-            }
+//        if let touch = touches.first {
+        if let touchLocation = touches.first?.location(in: sceneView) {
+            guard let query = sceneView.raycastQuery(from: touchLocation,
+                                                     allowing: .existingPlaneInfinite,
+                                                     alignment: .any) else { return }
             let results = sceneView.session.raycast(query)
             guard let hitTestResult = results.first else {
                 print("No surface found")
@@ -142,10 +142,6 @@ extension ViewController: ARSCNViewDelegate {
             addDice(atLocation: hitTestResult)
         }
     }
-    
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        <#code#>
-//    }
 
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
